@@ -1,0 +1,14 @@
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\bin\Debug\net8.0\PuzzleSpel.exe
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\bin\Debug\net8.0\PuzzleSpel.deps.json
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\bin\Debug\net8.0\PuzzleSpel.runtimeconfig.json
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\bin\Debug\net8.0\PuzzleSpel.dll
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\bin\Debug\net8.0\PuzzleSpel.pdb
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.AssemblyInfoInputs.cache
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.AssemblyInfo.cs
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.csproj.CoreCompileInputs.cache
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.dll
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\refint\PuzzleSpel.dll
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.pdb
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.genruntimeconfig.cache
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\ref\PuzzleSpel.dll
