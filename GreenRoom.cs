@@ -1,6 +1,5 @@
 public class GreenRoom
 {
-    
 
     public static void  Execute()
     {
@@ -8,7 +7,7 @@ public class GreenRoom
                 Thread.Sleep(100);
         System.Console.WriteLine("Welcome to the green room");
         System.Console.WriteLine();
-        Thread.Sleep(20);
+        Thread.Sleep(200);
         System.Console.WriteLine("Press enter to continue...");
         Console.ReadLine();
         Console.Clear();
@@ -17,6 +16,7 @@ public class GreenRoom
         System.Console.WriteLine("Each failed guess takes up to 30 minutes to retry.");
         System.Console.WriteLine("Reminder that oxygen decreases by 10% per hour"); 
         System.Console.WriteLine("You have 3 hours and 6 trials before your oxygen levels reach 70%");
+        System.Console.WriteLine("If you succeed, you will collect a green key");
         System.Console.WriteLine();
         System.Console.WriteLine("Press any key to continue...");
         Console.ReadKey();
@@ -102,7 +102,7 @@ public class GreenRoom
                 
                  else if(numberInput.Equals(randomNumber))
                 {
-                    System.Console.WriteLine("Congratulation! you may now exit the green room");
+                    System.Console.WriteLine($"Congratulations! you have won the green key ");
                     System.Console.WriteLine();
                     return;
                 }

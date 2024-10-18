@@ -7,6 +7,7 @@ C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.Generated
 C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.AssemblyInfoInputs.cache
 C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.AssemblyInfo.cs
 C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.csproj.CoreCompileInputs.cache
+C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.sourcelink.json
 C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.dll
 C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\refint\PuzzleSpel.dll
 C:\Users\cedri\OneDrive\Desktop\PuzzleSpel\obj\Debug\net8.0\PuzzleSpel.pdb
