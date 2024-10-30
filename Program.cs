@@ -4,7 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        GreenRoom.Execute();
+     Game game = new Game();
+     game.Start();
 
     
     }

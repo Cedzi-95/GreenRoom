@@ -1,63 +1,63 @@
-public class GreenRoom
+using System.Security.Cryptography.X509Certificates;
+
+public class GreenRoom 
 {
-
-    public static void  Execute()
+    private Player player;
+    public GreenRoom(Player player)
     {
-        System.Console.WriteLine();
-                Thread.Sleep(100);
-        System.Console.WriteLine("Welcome to the green room");
-        System.Console.WriteLine();
-        Thread.Sleep(200);
-        System.Console.WriteLine("Press enter to continue...");
-        Console.ReadLine();
-        Console.Clear();
-        System.Console.WriteLine("This room is connected to an oxygen sucking machine");
-        System.Console.WriteLine("You have to find a box and guess the code.");
-        System.Console.WriteLine("Each failed guess takes up to 30 minutes to retry.");
-        System.Console.WriteLine("Reminder that oxygen decreases by 10% per hour"); 
-        System.Console.WriteLine("You have 3 hours and 6 trials before your oxygen levels reach 70%");
-        System.Console.WriteLine("If you succeed, you will collect a green key");
-        System.Console.WriteLine();
-        System.Console.WriteLine("Press any key to continue...");
-        Console.ReadKey();
-
-        
-        OpenBox();
-        System.Console.WriteLine("press key to continue...");
-        Console.ReadLine();
-        GuessTheCode();
-        
+        this.player = player;
     }
+
+    public  void Execute()
+    {
+        Console.Clear();
+        Console.WriteLine("Welcome to the green room...");
+        Thread.Sleep(4000);
+        Console.WriteLine("You feel a chill in the air as you step inside.");
+        Thread.Sleep(3000);
+        Console.Clear();
+        Console.WriteLine("This room is connected to an ominous oxygen-sucking machine.");
+        Console.WriteLine("You must find a box and guess the code.");
+               OpenBox();
+               Console.Clear();
+        Console.WriteLine("Time is of the essence-oxygen decreases by 10% every hour.");
+        Console.WriteLine("You have 3 hours and 6 trials before your oxygen levels reach a critical point.");
+        Console.WriteLine("If you succeed, you will collect a green key.");
+        Thread.Sleep(4000);
+        GuessTheCode();
+    }
+
     public static void OpenBox()
     {
         System.Console.WriteLine();
-        System.Console.WriteLine("Look for a box that contains the door key ");
+        System.Console.WriteLine("Look for a box that contains the door key. ");
        while(true)
        {
-                System.Console.WriteLine("Have you found the box yet? yes or no");
-        string answer = Console.ReadLine()!;
+                Thread.Sleep(2000);
+        System.Console.WriteLine("Have you found the box yet? press yes or no");
+        string answer = Console.ReadLine()!.ToLower();
 
 
-        if(answer.Equals("yes") || answer.Equals("YES"))
+        if(answer.Equals("yes"))
         {
-            System.Console.WriteLine("Great");
+            System.Console.WriteLine("* Great");
             break;
         }
-        else  if(answer.Equals("NO") || answer.Equals("no")) 
+        else  if( answer.Equals("no")) 
         {
             System.Console.WriteLine("Keep looking, time is running out");
 
         }
        }
     }
-    public static void GuessTheCode()
+    public  void GuessTheCode()
     {
-        System.Console.WriteLine("Now it´s time to guess the last 2 digits of the code");
-        System.Console.WriteLine("Press x to get a hint or press any other key to ignore it.");
-        string hint = Console.ReadLine()!;
-        if(hint.Equals("X") || hint.Equals("x"))
+        System.Console.WriteLine("\nNow it´s time to guess the last 2 digits of the code");
+        System.Console.WriteLine("Press X to get a hint or press any other key to ignore it.");
+        string hint = Console.ReadLine()!.ToLower();
+        if( hint.Equals("x"))
         {
-            System.Console.WriteLine("Its between 54 and 61");
+            System.Console.WriteLine("Guess between 54 and 61");
             
         }
         else 
@@ -84,7 +84,8 @@ public class GreenRoom
                 {
                     if(numberInput != randomNumber)
                     {
-                        System.Console.Write($"Wrong, time is running out. One guess left! Enter 2 digits:  ");
+                        System.Console.WriteLine("Wrong, You feel light headed and oxygen is depletting");
+                        System.Console.Write($"time is running out. \n One guess left! Enter 2 digits:  ");
                     }
                 }
 
@@ -95,14 +96,16 @@ public class GreenRoom
                         System.Console.WriteLine();
                         System.Console.Write("Oxygen is too low, You are dead!");
                         System.Console.WriteLine();
-                        System.Console.WriteLine("Right number was " + randomNumber);
                         return;
                         }
                     }
                 
-                 else if(numberInput.Equals(randomNumber))
+                  if(numberInput.Equals(randomNumber))
                 {
                     System.Console.WriteLine($"Congratulations! you have won the green key ");
+                      
+                     player.Pickup("greenkey");
+                     
                     System.Console.WriteLine();
                     return;
                 }
@@ -110,10 +113,8 @@ public class GreenRoom
         }
         
     }
+    
 
 
 
-
-
-
-}
+ }
